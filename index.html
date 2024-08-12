@@ -13,12 +13,13 @@
         <div class="container">
             <div class="logo"><i class='bx bxs-universal-access'></i> Eastate</div>
         <!-- nav bar -->
-         <nav class="menu">
+         <nav class="menu" id="navbar">
             <a href="#">About us</a>
             <a href="#">Properity</a>
-            <a href="#">Agent</a>
-            <button type="button">contact us</button>
+            <a href="#">Agent</a> 
          </nav>
+         <button id="contact" type="button">contact us</button>
+         <i id="menuicon" class='bx bx-menu'></i>
         </div>
     </header>
     <!--home section-->
@@ -348,6 +349,15 @@
            </div>
         </div>
     </div>
+    <script>
+        let menuIcon = document.querySelector("#menuicon")
+        let navBar = document.querySelector("#navbar")
+        menuIcon.onclick = ()=>{
+            menuIcon.classList.toggle('bx-x')
+            navBar.classList.toggle('active')
+            
+        }
+    </script>
 </footer>
 </body>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
