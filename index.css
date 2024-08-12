@@ -635,6 +635,30 @@ footer .container{
 
 }
 @media screen and (max-width:768px ){
+    header .container{
+        position: fixed;
+    }
+    #menuicon{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background-color: beige;
+        border-top: o.1rem solid black;
+        display: none;
+    }
+    .menu.active{
+        display: block;
+    }
+    .menu a{
+        display: block;
+        font-size: 2em;
+        margin: 3rem 0;
+        color: black;
+    }
     html{
         font-size: 62.5%;
     }
@@ -829,30 +853,7 @@ footer .container{
 }
 }
 @media screen and (max-width:460px ){
-    header .container{
-        position: fixed;
-    }
-    #menuicon{
-        display: block;
-    }
-    .menu{
-        position: absolute;
-        top: 100%;
-        left: 0%;
-        width: 100%;
-        background-color: beige;
-        border-top: o.1rem solid black;
-        display: none;
-    }
-    .menu.active{
-        display: block;
-    }
-    .menu a{
-        display: block;
-        font-size: 2em;
-        margin: 3rem 0;
-        color: black;
-    }
+   
     .home{
         padding-top: 6em;
     }
